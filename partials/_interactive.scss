@@ -1,0 +1,10 @@
+.nav a:hover {
+  color: $primary-text-color;
+  background-color: $primary-color-light;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: $primary-text-color;
+  transition: 0.3s;
+}

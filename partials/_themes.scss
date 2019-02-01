@@ -1,0 +1,164 @@
+/**************************************
+
+GENERAL
+
+**************************************/
+
+body {
+  font-family: $font-family-main;
+  background-color: $primary-color-dark;
+}
+
+header,
+nav,
+aside,
+main {
+  color: $primary-color-text;
+}
+
+/**************************************
+
+HEADER
+
+**************************************/
+
+header {
+  background-color: $accent-color;
+  border-bottom: double $white;
+  font-size: 1.3rem;
+  box-shadow: $shadow;
+}
+
+.title {
+  color: $primary-text-color;
+}
+
+/**************************************
+
+NAV
+
+**************************************/
+
+nav {
+  background-image: url("img/laptop-overhead.jpg");
+  background-position: right;
+  background-size: cover;
+}
+
+.nav-title {
+  background-image: linear-gradient(
+    to left,
+    rgba(235, 235, 235, 1),
+    rgba(235, 235, 235, 0.8)
+  );
+  font-size: 2rem;
+}
+
+/****** title shading ******/
+
+/*** shading behind letters ***/
+.nav-title .title-name,
+.nav-title .title-headline {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-title .title-name::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  bottom: 20%;
+  left: -4%;
+  width: 105%;
+  height: 3rem;
+  background-color: $primary-color-fade;
+}
+
+.nav-title .title-headline::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  bottom: 20%;
+  left: 1%;
+  display: block;
+  width: 105%;
+  height: 8px;
+  background-color: $primary-color-fade;
+}
+
+/*** white box ***/
+@media (min-width: $tablets) {
+  .nav-title {
+    font-size: 3rem;
+    background-image: linear-gradient(
+      to left,
+      rgba(235, 235, 235, 0.8),
+      rgba(235, 235, 235, 0.1)
+    );
+  }
+}
+
+/***************************/
+
+.nav a {
+  color: $primary-color-text;
+  background-color: $primary-color;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+/**************************************
+
+ASIDE/MAIN
+
+**************************************/
+
+aside,
+main {
+  border-top: 2px solid $primary-color-light;
+  border-left: 2px solid $primary-color-light;
+}
+
+article {
+  background-color: $primary-color-light;
+}
+
+.about h2,
+.article-banner h2 {
+  background-color: $accent-color;
+  color: $primary-text-color;
+  box-shadow: $shadow;
+}
+
+.article-image {
+  border: 1px solid $primary-color-dark;
+  padding: 5px;
+  background-color: $white;
+  filter: grayscale(55%);
+}
+
+.about-content,
+.article-title {
+  background-color: $accent-color;
+}
+
+.article-title,
+.article-image {
+  box-shadow: $shadow;
+}
+
+.article-content {
+  color: $primary-text-color;
+}
+
+/**************************************
+
+FOOTER
+
+**************************************/
+
+footer {
+  background-color: $divider-color;
+  color: $secondary-text-color;
+}

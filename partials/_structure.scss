@@ -1,0 +1,270 @@
+/**************************************
+
+GENERAL
+
+**************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.title-gap {
+  display: none;
+  padding: 0 10px;
+  @media (min-width: $tablets) {
+    display: inline;
+  }
+}
+
+/**************************************
+
+HEADER
+
+**************************************/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 10px;
+  z-index: 10;
+  transition: 0.5s;
+  @media(min-width: $tablets) {
+    justify-content: space-between;
+  }
+  &.scroll {
+    transform: translateY(50px);
+  }
+}
+
+.header-title {
+  display: none;
+}
+
+@media (min-width: $tablets) {
+  .header-title {
+    display: inherit;
+  }
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-links a {
+  margin-right: 10px;
+  width: 100px;
+  padding: 0.2rem;
+}
+
+/**************************************
+
+NAV
+
+**************************************/
+
+nav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  max-width: 800px;
+  @media (min-width: $tablets) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem;
+  }
+}
+
+.nav-links {
+  padding: 3rem;
+}
+
+ul.nav {
+  list-style-type: none;
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: $border-radius;
+}
+
+.nav-links a {
+  margin: 17px;
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  align-self: center;
+  max-width: 800px;
+}
+
+@media (min-width: $tablets) {
+  .nav {
+    text-align: left;
+  }
+}
+
+/**************************************
+
+ASIDE/MAIN
+
+**************************************/
+
+aside,
+main {
+  padding: 1rem;
+  margin: 30px 5px;
+  @media (min-width: $tablets) {
+    margin: 100px 0;
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  position: relative;
+  margin: 20px;
+}
+
+.about h2 {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  display: inline;
+}
+
+.about h2,
+.article-banner h2,
+.about-content,
+.article-title {
+  padding: 10px;
+  border-radius: $border-radius;
+}
+
+.about-image {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: $border-radius;
+}
+
+main {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.article-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+article {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: $border-radius;
+}
+
+.article-image {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 150px;
+  height: auto;
+  border-radius: $border-radius;
+}
+
+.article-banner {
+  text-align: center;
+}
+
+.article-title {
+  display: inline;
+}
+
+.article-title,
+.article-date {
+  margin-bottom: 10px;
+}
+
+/**************************************
+
+FOOTER
+
+**************************************/
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: $tablets) {
+  .footer-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .email::after {
+    content: "email";
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  .codepen::after {
+    content: "codepen";
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  .linkedin::after {
+    content: "linkedin";
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  .github::after {
+    content: "github";
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+}

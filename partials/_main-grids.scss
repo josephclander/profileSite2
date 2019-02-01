@@ -1,0 +1,45 @@
+/*Grid - Mobile First*/
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "aside"
+    "main"
+    "footer";
+}
+
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.grid {
+  grid-gap: 1em;
+  margin: 0 auto;
+  height: 100vh;
+  grid-template-rows: 6fr 1fr 1fr 50px;
+}
+
+/***** Grid - Tablets+ *****/
+
+@media (min-width: $tablets) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "nav nav nav nav nav"
+      ". aside main main ."
+      "footer footer footer footer footer";
+
+    grid-template-rows: 6fr 1fr 250px;
+    grid-template-columns: 20px 1fr 2fr 1fr 20px;
+  }
+}

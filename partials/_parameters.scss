@@ -1,0 +1,29 @@
+/*** Screen Sizes ***/
+$tablets: 840px;
+
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+$font-family-main: "Source Sans Pro", sans-serif;
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+/*** Colour Scheme ***/
+$white: #ffffff;
+
+$primary-color-dark: #455a64;
+$primary-color: #607d8b;
+$primary-color-fade: hsl(200, 18%, 55%);
+$primary-color-light: #cfd8dc;
+$primary-color-text: #ffffff;
+$accent-color: #00bcd4;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #bdbdbd;
+
+/*** Style Helpers ***/
+$shadow: 0 1px 5px rgb(41, 41, 41);
+$border-radius: 5px;
