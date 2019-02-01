@@ -4,7 +4,7 @@ This is my second mock-up of a website that could display my work.
 
 ## Features
 
-I have held my current site for some time now and the content has now began to be significant enough to look at how I could further develop my site from what I have studied so far. I started from scratch again. Here are a list of the fetures that I considered when creating this mock-up for a potential new site:
+I have held my current site for some time now and the content has now began to be significant enough to look at how I could further develop my site from what I have studied so far. I started from scratch again. Here are a list of the features that I considered when creating this mock-up for a potential new site:
 
 * Continue to use Sass but to improve the folder structure with use of partials
 * Create a landing page
